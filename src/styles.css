@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  height: 100vh;
+  background-color: rgba(3, 3, 44, 0.308);
+  background-image: url('../src/assets/img/banner.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  html body {
+    height: 100vh;
+    background-color: rgba(3, 3, 44, 0.336);
+    background-image: url('../src/assets/img/banner-mobil.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+}

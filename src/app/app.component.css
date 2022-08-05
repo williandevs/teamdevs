@@ -1,0 +1,63 @@
+
+
+.container{
+  display: flex;
+}
+.div-texto {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  text-shadow:  2px 4px 5px black;
+  font-size: 1.2rem;
+}
+
+
+
+
+.div-conteudo {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: rgba(0, 15, 58, 0.808);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow:  2px 4px 5px black;
+
+
+}
+
+.div-conteudo img{
+  width: 150px;
+}
+
+div.div-conteudo p{
+  margin: 8px;
+
+
+}
+div.div-conteudo p span{
+  color: tomato;
+
+
+}
+
+.icones{
+  text-align: center;
+}
+
+.icones a {
+  margin-left: 5px 0px 5px 0px;
+  text-transform: none;
+  color: #fff;
+  margin: 5px;
+  font-size: 25px;
+
+}
+
+
+.div-img2{
+  width:100px;
+}
