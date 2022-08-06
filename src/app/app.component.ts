@@ -19,15 +19,13 @@ export class AppComponent {
 
 
 
-  profiles:
-  
-  
-  
-  
+
+
+
   ngOnInit(): void { }
 
 
   clicouNoPerfil() {
-    this.profile.name = "oi";
+    //this.profile.name = "oi";
   }
 }
