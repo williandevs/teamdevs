@@ -10,9 +10,11 @@
       <div class="div-dados">
 
         <p>Nome: <strong><span>{{profilesSelecionado.name}}</span></strong></p>
-        <p>Desenvolvedor: <strong><span>{{profilesSelecionado.developer}}</span></strong></p>
-        <p> Responsavel por: <strong><span>{{profilesSelecionado.responsibility}}</span></strong></p>
-        <p> Linguagens : <strong><span>{{profilesSelecionado.languages}}</span></strong></p>
+        <p>Experiência: <strong><span> {{profilesSelecionado.experiencia}} Anos</span></strong></p>
+        <p>Nível: <strong><span> {{profilesSelecionado.nivel}}</span></strong></p>
+        <p>Desenvolvedor : <strong><span>{{profilesSelecionado.developer}}</span></strong></p>
+        <p>Responsável por: <strong><span>{{profilesSelecionado.responsibility}}</span></strong></p>
+        <p>Linguagens : <strong><span>{{profilesSelecionado.languages}}</span></strong></p>
         <br>
         <div class="icones">
           <a href="https://www.linkedin.com/in/willianfigueiredo/" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -34,7 +36,7 @@
 <div class="container">
   <section class="img-container">
     <div *ngFor="let profile of profiles">
-      <img (click)="clicouNoPerfil(profile)" [src]="profile.image" width="150px" alt="willian">
+      <img class="animation" (click)="clicouNoPerfil(profile)" [src]="profile.image" width="150px" alt="willian">
     </div>
   </section>
 

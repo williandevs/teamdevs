@@ -11,10 +11,10 @@ export class AppComponent {
   title = 'Teamdevs';
 
 
-profilesSelecionado: Profile | undefined;
+  profilesSelecionado!: Profile;
 
 
-profiles: Profile[] | undefined;
+  profiles!: Profile[];
 
 
 constructor(
@@ -22,7 +22,7 @@ constructor(
 ){}
 
   ngOnInit(){
-    this.profiles = this.profileService.getProfile()
+    this.profiles = this.profileService.getProfiles()
    }
 
 
