@@ -1,3 +1,4 @@
+import { ProfileService } from './model/profile.service';
 import { Profile } from './model/profile';
 import { Component } from '@angular/core';
 
@@ -10,22 +11,22 @@ export class AppComponent {
   title = 'Teamdevs';
 
 
-  profile: Profile = {
-    name: 'willian',
-    developer: 'Front-End',
-    responsibility: 'Criação, otimização e desenvolvimento de sites institucionais. Desenvolvedor de Apps Ionic',
-    languages: 'Html, Css, Typescript, Angular',
-  };
+profilesSelecionado: Profile | undefined;
 
 
+profiles: Profile[] | undefined;
 
 
+constructor(
+  private profileService: ProfileService,
+){}
+
+  ngOnInit(){
+    this.profiles = this.profileService.getProfile()
+   }
 
 
-  ngOnInit(): void { }
-
-
-  clicouNoPerfil() {
-    //this.profile.name = "oi";
+  clicouNoPerfil(profile: Profile) {
+    this.profilesSelecionado = profile;
   }
 }

@@ -58,6 +58,12 @@ div.div-conteudo p span{
 }
 
 
-.div-img2{
-  width:100px;
+.img-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top:50px;
+  gap: 10px;
 }
+

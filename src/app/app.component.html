@@ -4,35 +4,38 @@
 
 <div class="container">
 
-  <div class="div-conteudo" *ngIf="profile.name">
+  <div class="div-conteudo" *ngIf="profilesSelecionado">
     <div class="div-img">
-      <img src="assets/img/willian.png" alt="willian">
-    </div>
-    <div class="div-dados">
+      <img [src]="profilesSelecionado.image" alt="willian">
+      <div class="div-dados">
 
-      <p>Nome: <strong><span>{{profile.name}}</span></strong></p>
-      <p>Desenvolvedor: <strong><span>{{profile.developer}}</span></strong></p>
-      <p> Responsavel por: <strong><span>{{profile.responsibility}}</span></strong></p>
-      <p> Linguagens : <strong><span>{{profile.languages}}</span></strong></p>
-      <br>
-      <div class="icones">
-        <a href="https://www.linkedin.com/in/willianfigueiredo/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/william_devs/" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://github.com/williandevs" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://williamdev.com.br/" target="_blank"><i class="bi bi-filetype-html"></i></a>
+        <p>Nome: <strong><span>{{profilesSelecionado.name}}</span></strong></p>
+        <p>Desenvolvedor: <strong><span>{{profilesSelecionado.developer}}</span></strong></p>
+        <p> Responsavel por: <strong><span>{{profilesSelecionado.responsibility}}</span></strong></p>
+        <p> Linguagens : <strong><span>{{profilesSelecionado.languages}}</span></strong></p>
+        <br>
+        <div class="icones">
+          <a href="https://www.linkedin.com/in/willianfigueiredo/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/william_devs/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/williandevs" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://williamdev.com.br/" target="_blank"><i class="bi bi-filetype-html"></i></a>
 
 
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
+
+
+
 
 </div>
+<div class="container">
+  <section class="img-container">
+    <div *ngFor="let profile of profiles">
+      <img (click)="clicouNoPerfil(profile)" [src]="profile.image" width="150px" alt="willian">
+    </div>
+  </section>
 
-<br><br>
-<section class="container">
-  <div>
-    <img (click)="clicouNoPerfil()" src="assets/img/willian.png" width="150px" alt="willian">
-  </div>
-</section>
- 
+</div>
